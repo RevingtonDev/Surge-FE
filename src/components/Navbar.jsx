@@ -111,7 +111,11 @@ class NavbarComponent extends Component {
                                         if (!isSearchBarOpen) {
                                             this.setState({ isSearchBarOpen: true })
                                         }
-                                    }} />
+                                    }} onKeyUp={(e) => {
+					if (e.key === "Enter") {
+						this.search();
+					}
+				}}/>
                                 </div>
                                 <button className="btn default-btn" onClick={() => {
                                     this.search();
