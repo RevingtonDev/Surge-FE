@@ -1,0 +1,56 @@
+@import url("./_const.css");
+
+.create-account {
+    padding: 15px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.create-account input,
+.create-account select {
+    margin: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid var(--white);
+    color: var(--black);
+    caret-color: var(--black);
+    background-color: var(--white);
+}
+
+.create-account input::placeholder {
+    color: var(--silver-grey)
+}
+
+.create-account .section-title {
+    color: var(--black);
+}
+
+.create-account .section-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-page .data-check {
+    margin: 15px;
+    font-family: lato;
+    background-color: var(--dark-grey);
+    padding: 5px 15px 5px 5px;
+    border-radius: 5px;
+}
+
+.admin-page label input {
+    margin: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    .create-account .section-title {
+        width: fit-content;
+    }
+
+    .create-account .section-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        display: grid;
+    }
+}

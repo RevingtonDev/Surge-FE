@@ -1,0 +1,52 @@
+@import url('_const.css');
+
+.update-page {
+    justify-content: flex-start !important;
+    color: var(--white);
+    font-family: nunito;
+    min-height: 100vh !important;
+    height: fit-content;
+    fill: aquamarine;
+}
+
+.update-page .title-content {
+    font-size: 3rem !important;
+    margin: 15px;
+}
+
+.update-form .data-input {
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--dark-black);
+}
+
+.data-input-field {
+    font-size: 1.05rem;
+}
+
+.update-form .data-field {
+    color: wheat;
+    margin: 5px;
+    max-width: calc(100% - 10px);
+    border-bottom: 1px solid transparent;
+}
+
+.update-form .eye,
+.update-form .eye-slash {
+    width: 24px;
+    cursor: pointer;
+}
+
+.update-form .data-field:focus {
+    border-bottom: 1px solid var(--white);
+}
+
+.update-form select {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.update-form option {
+    color: var(--black);
+}
+

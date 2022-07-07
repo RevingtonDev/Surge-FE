@@ -1,0 +1,115 @@
+@import url("./_const.css");
+
+.home-container {
+    padding: 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-content {
+    font-family: raleway;
+    transform: translate(0, 25px);
+}
+
+.title .title-content {
+    color: var(--white);
+    font-size: 7.5rem;
+    font-family: poppins;
+}
+ 
+.title .title-content {
+    text-shadow: -5px 0 var(--main-color), 5px 0 var(--secondary-color);
+}
+
+.login-btn {
+    margin: 20px !important;
+}
+
+.login-form {
+    margin: 15px 15px 15px 50px;
+    padding: 35px 15px;
+    min-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    animation: form-pop-up 0.8s ease forwards;
+}
+
+.home-content {
+    margin-right: 50px;
+}
+
+.login-form .data-input {
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 0 8px var(--main-color);
+    border-radius: 50px;
+}
+
+.data-input.disabled {
+    background-color: var(--disabled-black);
+}
+
+.data-input input {
+    width: 100%;
+    font-size: 1.05rem;
+    color: var(--white);
+}
+
+.data-input input:disabled {
+    cursor: not-allowed;
+}
+
+.data-input:disabled {
+    color: var(--white);
+}
+
+.input-logo {
+    fill: var(--white)
+}
+
+.input-logo.medium svg {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+.input-logo.small svg {
+    width: 18px;
+    height: 18px;
+}
+
+.input-logo .input-logo svg {
+    height: 30px;
+}
+
+.home-container .loading-indicator {
+    border-color: red;
+}
+
+@keyframes form-pop-up {
+    0% {
+        transform: scale(0);
+        box-shadow: 0 0 0 var(--main-color);
+    }
+
+    75% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px var(--main-color);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px var(--main-color);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .welcome-content {
+        font-size: 0.9rem;
+        transform: translateY(10px);
+    }
+
+    .main-title .title-content {
+        font-size: 3.5rem;
+    }
+}

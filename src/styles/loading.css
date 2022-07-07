@@ -1,0 +1,79 @@
+@import url('./_const.css');
+
+.loading-ui {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar {
+    position: relative;
+    width: 65%;
+    height: 5px;
+    background-color: var(--white);
+    overflow: visible;
+}
+
+.progress-bar::before,
+.progress-bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: solid white;
+}
+
+.progress-bar::before {
+    transform: rotateZ(45deg);
+    right: 105%;
+    border-width: 5px 5px 0 0;
+}
+
+.progress-bar::after {
+    transform: rotateZ(-45deg);
+    left: 105%;
+    border-width: 5px 0 0 5px;
+}
+
+.loading-ui .text {
+    color: var(--white);
+    font-family: sarabun;
+    font-size: 1.3rem;
+    margin: 15px;
+    animation: loading-text 3s ease infinite;
+}
+
+.wheel {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    animation: loading-ui 3s cubic-bezier(0, 1.26, 0.74, -0.14) infinite;
+}
+
+@keyframes loading-text {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes loading-ui {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+}

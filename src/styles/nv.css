@@ -1,0 +1,100 @@
+@import url('./_const.css');
+
+.nv-bar {
+    top: 0;
+    color: var(--white);
+    padding: 5px 15px;
+    position: sticky;
+    justify-content: space-between !important;
+    background-color: var(--disabled-black);
+
+}
+
+.nv-bar .title {
+    margin: 5px 0;
+}
+
+.nv-bar .title-content {
+    font-size: 2rem !important;
+    font-family: poppins;
+}
+
+.nv-bar .title-content {
+    letter-spacing: 2px;
+    text-shadow: -3px 0 var(--main-color), 3px 0 var(--secondary-color);
+}
+
+.nv-bar .nv-search {
+    width: 400px;
+    color: var(--black);
+}
+
+.nv-search .search-bar {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.nv-search input {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.nv-bar .search {
+    height: 30px;
+    padding: 6px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.client-name {
+    font-size: 1.02rem;
+    font-family: lato;
+    margin: 5px;
+}
+
+.nv-bar .default-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
+
+.role {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-family: lato;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--white);
+    border: 1px solid var(--black);
+    background-color: var(--dark-grey);
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white) !important;
+    padding: 15px 15px;
+    overflow: auto;
+    scrollbar-width: 0;
+}
+
+.search-results::-webkit-scrollbar {
+    display: none;
+}
+
+.search-results.invisible {
+    max-height: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+    .nv-bar .nv-search {
+        display: none;
+    }
+}
